@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="style.css">
 	</head>
     <body data-page="1">
-        <div class="container">
-            <form action="page2.html">
+        <form id="pradinisPage">
                 <div>
                     <input type="text" name="vardas" placeholder="Įveskite savo vardą" required>
                 </div>
@@ -25,10 +24,12 @@
                 <div>
                     <button type="submit">ŽAISTI</button>
                 </div>             
-        </form>
-        </div>
+            </form>
+            <div id="results">
+                <h2>Rezultatai:</h2>
+                <div id="resultsTable"></div>
+            </div>
         <script src="index.js"></script>
-
     </body>
 
 </html>
