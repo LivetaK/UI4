@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+const page = document.body.dataset.page;
+
+if (page === "1") {
+    const form = document.getElementById('pradinisPage');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const varas = form.elements['vardas'].value;
+        const sudetingumoLygis = form.elements['sudetingumoLygis'].value;
+
+        sessionStorage.setItem('zaidejoVardas', varas);
+        sessionStorage.setItem('sudetingumoLygis', sudetingumoLygis);
+
+        if (sudetingumoLygis === 'lengvas') {
+            window.location.href = 'page2.html';
+        } else if (sudetingumoLygis === 'vidutinis') {
+            window.location.href = 'page3.html';
+        } else if (sudetingumoLygis === 'sunkus') {
+            window.location.href = 'page4.html';
+        }
+    });
+    }
+});
+
+
+
 const cards = document.querySelectorAll('.kortele');
 
 let hasFlippedCard = false;
@@ -44,7 +70,7 @@ function unflipCards(){
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         resetBoard();
-    }, 1500);
+    }, 800);
 
 }
 
