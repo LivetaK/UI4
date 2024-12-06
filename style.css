@@ -10,7 +10,10 @@
 body {
     height: 100vh;
     display: flex;
-    background: #759AAB;
+    background: #DCAB6B;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -61,3 +64,46 @@ body {
     transform: rotateY(0deg);
   }
   
+.mainPage{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 80vw;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+input, select, option, button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+button:hover{
+    background: #d8dad6;
+}
+
+h2{
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.rezultatai{
+    margin-top:2rem;
+    font-size: 1.7rem;
+}
+.moves-container{
+    margin-top: 2rem;
+}
+.moves{
+    font-size: 2rem;
+    font-weight: bold;
+}
