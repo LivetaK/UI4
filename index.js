@@ -69,7 +69,7 @@ if (page === "1") {
 
 
                 movesCount++;
-                showMoves.textContent = `Moves: ${movesCount}`;
+                showMoves.textContent = `Ėjimai: ${movesCount}`;
                 //ar sutampa
                 match();
         };
