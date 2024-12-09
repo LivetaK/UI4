@@ -11,7 +11,7 @@ if (page === "1") {
         resultsDiv.innerHTML = '';
         allResults.forEach(result => {
             resultsDiv.innerHTML += `
-                <p>Žaidėjas: <strong>${result.name}</strong>, Lygis: <strong>${result.level}</strong>, Moves: <strong>${result.moves}</strong></p>
+                <p>Žaidėjas: <strong>${result.name}</strong>, Lygis: <strong>${result.level}</strong>, Ėjimai: <strong>${result.moves}</strong></p>
             `;
         });
     } else {
